@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>사칙 연산 계산기</title>
+</head>
+<body>
+	<div align="center">	
+		<h1>사칙 연산 계산기</h1>
+		<hr>
+		<form method="get" action="op">
+		<table>
+			<tr>
+				<td><input type="text" name="firstInput"></td>
+				<td>
+					<select id="operation" name="operation">
+						<option value="+">+</option>
+						<option value="-">-</option>
+						<option value="*">*</option>
+						<option value="/">/</option>
+					</select>
+				</td>
+				<td><input type="text" name="secondInput"></td>
+				<td colspan="2"><input type="submit" value="계산"></td>
+			</tr>
+		</table>
+		
+		</form>
+	</div>
+</body>
+</html>

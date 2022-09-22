@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>환율 계산기</title>
+</head>
+<body>
+	<div align="center">	
+		<h1>환율 계산기</h1>
+		<hr>
+		<form method="get" action="ex">
+		<table>
+			<tr>
+				<td>원화 : </td>
+				<td><input type="text" name="firstInput"></td>
+				<td>
+					<select id="operation" name="operation">
+						<option value="dollar">달러</option>
+						<option value="yen">엔화</option>
+						<option value="yuan">위안</option>
+						<option value="euro">유로</option>
+					</select>
+				</td>
+				<!-- <td><input type="text" name="secondInput"></td> -->
+				<td colspan="2"><input type="submit" value="변환"></td>
+			</tr>
+		</table>
+		
+		</form>
+	</div>
+</body>
+</html>

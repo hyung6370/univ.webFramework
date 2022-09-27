@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>성적 입력</title>
+</head>
+<body>
+	<h1 style="text-align:center;">성적 입력 데이터</h1>
+	<hr>
+	<form method="get" action="printgrade_2.jsp">
+	<table border="1" style="margin-left:auto; margin-right:auto;">
+        	<tr>
+            	<th>학번</th> <td><input type="text" name="id"></td>
+            </tr>
+            
+            <tr>
+            	<th>이름</th> <td><input type="text" name="name"></td>
+            </tr>
+            
+            
+            <tr>
+            	<th>중간시험</th> <td><input type="text" name="mexam"> 30점 만점 </td>
+            </tr>
+            
+            <tr>
+            	<th>기말시험</th> <td><input type="text" name="fexam"> 30점 만점 </td>
+            </tr>
+            
+            <tr>
+            	<th>보고서</th> <td><input type="text" name="report"> 20점 만점 </td>
+            </tr>
+            
+            <tr>
+            	<th>출석</th> <td><input type="text" name="check"> 20점 만점 </td>
+            </tr>
+            
+            <tr>
+            	<th></th> <td style="display: flex; justify-content: center;"><input type="submit" value="전송"> <input type="reset" value="취소"></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

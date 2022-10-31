@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd"
+	xmlns:aop="http://www.springframework.org/schema/aop">
+	
+	<bean id="exeAspect" class="testSpring.ExeAspect" />
+	<bean id="loopCalc" class="testSpring.CalculatorImplDP" />
+	<bean id="recurCalc" class="testSpring.CalculatorImplDC" />
+	
+	<aop:config proxy-target-class="true">
+		<aop:aspect id="measureAspect" ref="exeAspect">
+			<aop:pointcut expression="execution(public * testSpring..*(..))" id="publicMethod" />
+			<aop:around pointcut-ref="publicMethod" method="measure" />
+		</aop:aspect>
+	</aop:config>
+</beans>

@@ -16,7 +16,7 @@ public class ProductDAO {
 		try {
 			Class.forName(jdbc_driver);
 //			conn = DriverManager.getConnection(jdbc_url, "spring4", "spring4");
-			conn = DriverManager.getConnection(jdbc_url, "root", "hjk895623!!");
+			conn = DriverManager.getConnection(jdbc_url, "DB_ID", "DB_PW");
 		} catch (Exception e) {
 			System.out.println(e);
 		}
